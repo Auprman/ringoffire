@@ -1,0 +1,24 @@
+
+section{
+    background-color: rgb(19, 18, 18);
+    height: 100px;
+    border: 1px solid rgba(255, 0, 0, 0.233);
+
+    >div{
+        height: 100%;
+        color: white;
+        margin: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+}
+
+#fire{
+    width: 100px;
+    height: 100px;
+    transition: filter 0.3s ease;
+    &:hover{
+        filter: opacity(0.6);
+    }
+}

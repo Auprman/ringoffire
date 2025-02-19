@@ -1,0 +1,19 @@
+.player{
+    display: flex;
+    align-items: center;
+    background-color: rgb(83, 83, 83);
+    
+    >img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 50px;
+        background-color: rgb(156, 201, 231);
+    }
+    span{
+        font-size: 32px;
+        margin-left: 16px;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+}

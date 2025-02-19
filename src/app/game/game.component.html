@@ -1,0 +1,25 @@
+<app-player></app-player>
+
+<section class="field">
+
+    <div class="card-stack">
+        <!-- Card stack -->
+        @for (item of cardAmount; track $index) {
+            <img [ngStyle]="{'right.px':   $index * 5 }" src="/assets/img/cards/card_cover.png" alt="card-cover">
+        }
+        <img (click)="takeCard()" class="top-card" style="right: 25px" src="/assets/img/cards/card_cover.png" alt="card-cover">
+        
+        <!-- Stack for played cards -->
+        @for (card of game.playedCards; track $index) {
+            <img src="/assets/img/cards/{{card}}.png" class="played-card" alt="current-card">
+        }
+        <!-- Current card  -->
+        @if (pickCardAnimation) {
+            <img [class.pick-card]="pickCardAnimation" class="pick-card" style="right: 25px" src="/assets/img/cards/{{ currentCard }}.png" alt="card-cover">
+        }
+       
+        
+              
+    </div>
+
+</section>
